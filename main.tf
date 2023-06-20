@@ -7,11 +7,11 @@ terraform {
   }
 }
 provider "aws" {
-  region = var.region
+  region = variable.region
 }
 
 resource "aws_s3_bucket" "example_bucket" {
-  bucket = var.bucket_name
+  bucket = variable.bucket_name
   acl    = "private"
 
  
