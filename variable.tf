@@ -1,19 +1,6 @@
-variable "region" {
-  description = "AWS region"
-  type        = string
-}
-
-variable "bucket_name" {
-  description = "Name of the S3 bucket"
-  type        = string
-}
-
-variable "logs_bucket_name" {
-  description = "Name of the S3 bucket for logs"
-  type        = string
-}
-
-variable "whitelisted_ips" {
-  description = "List of whitelisted IPs"
-  type        = list(string)
-}
+variable "access_key" { }
+variable "secret_key" { }
+variable "bucket_name" { }
+variable "aws_region" { }
+variable "whitelisted_ips" {}
+ 
