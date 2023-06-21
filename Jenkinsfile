@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                sh 'https://github.com/Ravaliganigapeta/s3-jenkins.git'
+                sh 'https://github.com/Ravaliganigapeta/jenkins-s3.git'
             }
         }
 
