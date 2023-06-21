@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'Github Navjit', url: 'https://github.com/Navjit-Kaur-TX/tfjen'
+                git branch: 'main', url: 'https://github.com/Ravaliganigapeta/jenkins-s3.git'
             }
         }
         stage('Terraform Init') {
             steps {
-                sh "terraform init -backend-config='access_key=AKIAR2ZHFOWGLLNFLANL' -backend-config='secret_key='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"
+                sh "terraform init -backend-config='access_key'='AKIARZKPS5HWFBQX4EVG' -backend-config='secret_key='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'"
             }
         }
         stage('Terraform Action') {
